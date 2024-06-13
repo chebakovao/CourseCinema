@@ -1,0 +1,29 @@
+﻿@model IEnumerable<CourseCinema.Models.Movie>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Latest Movies</h1>
+        <div class="movies">
+            @foreach (var movie in Model)
+            {
+                <a href="/Movies/Details/@movie.Id" class="movie-link">
+                    <div class="movie">
+                        <img src="@movie.ImageUrl" alt="@movie.Name">
+                        <h2>@movie.Name</h2>
+                        <p>@movie.Description</p>
+                        <div class="rating">@movie.Rating.ToString("0.0")</div>
+                    </div>
+                </a>
+            }
+        </div>
+    </div>
+</body>
+</html>

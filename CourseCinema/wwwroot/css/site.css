@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.movie-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+    .movie-card:hover {
+        transform: translateY(-5px);
+    }
+
+.movie-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.movie-info {
+    padding: 15px;
+}
+
+.movie-title {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    color: #333;
+    text-decoration: none;
+}
+
+.movie-rating {
+    font-size: 1em;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Movie Detail Page */
+.movie-detail-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie-detail-header {
+    display: flex;
+    align-items: center;
+}
+
+.movie-detail-image {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.movie-detail-info {
+    flex: 1;
+}
+
+.movie-detail-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.movie-detail-rating {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.movie-detail-description {
+    font-size: 1em;
+    color: #333;
+}
+
+.movie-detail-reviews {
+    margin-top: 30px;
+}
+
+    .movie-detail-reviews h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .movie-detail-reviews ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .movie-detail-reviews .review {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+        .movie-detail-reviews .review:last-child {
+            border-bottom: none;
+        }
+
+/* Review Form */
+.review-form {
+    margin-top: 30px;
+}
+
+    .review-form h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .review-form form {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .review-form form div {
+            margin-bottom: 10px;
+        }
+
+        .review-form form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .review-form form input,
+        .review-form form textarea,
+        .review-form form select {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .review-form form button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .review-form form button:hover {
+                background-color: #555;
+            }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.movie {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .movie img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .movie h2 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 1.2em;
+    }
+
+    .movie p {
+        font-size: 0.9em;
+        color: #555;
+    }
+
+.rating {
+    background-color: #ffd700;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
